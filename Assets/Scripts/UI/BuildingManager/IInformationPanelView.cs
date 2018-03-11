@@ -3,6 +3,6 @@
     public interface IInformationPanelView : IWindowView
     {
         void UpdateView();
-        void Constructor(IPopUpModel _model);
+        void Constructor(IPopUpModel _model, IPopUpController _controller);
     }
 }

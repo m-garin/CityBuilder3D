@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -7,6 +8,8 @@ namespace UI
     public abstract class AbstractWindowView : MonoBehaviour
     {
         GameObject overlayWindow;
+
+        public abstract void OnOutsideClick();
 
         protected void SetSelected(GameObject _go)
         {

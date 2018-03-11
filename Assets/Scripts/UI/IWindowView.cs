@@ -1,3 +1,4 @@
+using System;
 
 namespace UI
 {
@@ -5,5 +6,6 @@ namespace UI
     {
         void Show();
         void Hide();
+        void OnOutsideClick();
     }
 }

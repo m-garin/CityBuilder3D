@@ -39,5 +39,10 @@ namespace UI.Craft
         {
             return this.gameObject.activeSelf;
         }
+
+        public override void OnOutsideClick()
+        {
+            controller.ClickMenu();
+        }
     }
 }

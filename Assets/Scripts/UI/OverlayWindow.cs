@@ -14,7 +14,7 @@ namespace UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            parentCtrl.Hide();
+            parentCtrl.OnOutsideClick();
         }
     }
 }

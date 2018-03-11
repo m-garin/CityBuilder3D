@@ -38,7 +38,7 @@ namespace UI.BuildingManager
         public void ShowInfo()
         {
             menuView.Hide();
-            infoView.Constructor(model);
+            infoView.Constructor(model, this);
             infoView.Show();
             infoView.UpdateView();
         }

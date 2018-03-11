@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{F8D7B36B-BD74-F76F-FBFF-95CB72BE723D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlacementArea/CraftManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/BuildingManager/PopUpView.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlacementArea/BuildingsManager/BuildingsManager.cs" Line="17" Column="19" />
-      <File FileName="Assets/Scripts/Buildings/Ghosts/GhostFactory.cs" Line="9" Column="2" />
-      <File FileName="Assets/Scripts/Buildings/Real/RealFactory.cs" Line="2" Column="34" />
-      <File FileName="Assets/Scripts/Buildings/BuildingTypes.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Buildings/Building.cs" Line="10" Column="13" />
-      <File FileName="Assets/Scripts/Buildings/IBuildingFactory.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Buildings/IBuilding.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlacementArea/BuildingPlacementArea.cs" Line="18" Column="25" />
-      <File FileName="Assets/Scripts/PlacementArea/ICreatePlacementArea.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlacementArea/FitStatus.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/PlacementArea/CraftManager.cs" Line="14" Column="28" />
+      <File FileName="Assets/Scripts/UI/BuildingManager/InformationPanelView.cs" Line="32" Column="6" />
+      <File FileName="Assets/Scripts/PlacementArea/BuildingsManager/BuildingsManager.cs" Line="19" Column="9" />
+      <File FileName="Assets/Scripts/UI/BuildingManager/IInformationPanelView.cs" Line="8" Column="2" />
+      <File FileName="Assets/Scripts/UI/BuildingManager/PopUpController.cs" Line="41" Column="29" />
+      <File FileName="Assets/Scripts/UI/BuildingManager/PopUpView.cs" Line="25" Column="9" />
+      <File FileName="Assets/Scripts/UI/Craft/CraftMenuView.cs" Line="45" Column="36" />
+      <File FileName="Assets/Scripts/UI/AbstractWindowView.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/UI/OverlayWindow.cs" Line="20" Column="2" />
+      <File FileName="Assets/Scripts/UI/BuildingManager/IPopUpView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

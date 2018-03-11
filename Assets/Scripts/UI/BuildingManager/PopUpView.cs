@@ -18,6 +18,11 @@ namespace UI.BuildingManager
             deleteBtn.onClick.AddListener(controller.DeleteObject);
         }
 
+        public override void OnOutsideClick()
+        {
+            controller.HideMenu();
+        }
+
         public IPopUpController Controller
         {
             set
