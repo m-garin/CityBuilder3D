@@ -5,6 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/_Game/visuals/isometric/MainScene.unity
-    guid: d3f39c4a95a7f499bb7237adaa0b6346
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
