@@ -1,0 +1,9 @@
+/Library/
+/Temp/
+/.vs/
+*.CSharp.csproj
+*.CSharp.csproj.user
+*.csproj
+*.pidb
+*.sln
+*.project

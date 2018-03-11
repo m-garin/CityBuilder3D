@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{48221467-585F-A7FB-3CE1-790307AD7A2E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CraftMenu/MenuView.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Input/InputController.cs" Line="21" Column="29" />
+      <File FileName="Assets/Scripts/CraftMenu/MenuView.cs" Line="13" Column="5" />
+      <File FileName="Assets/Scripts/CraftMenu/ChooseMenuView.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Maxim/Work/GIT/Builder3D/Assets/Scripts/BuildingMenu/MenuController.cs" relfile="Assets/Scripts/BuildingMenu/MenuController.cs" line="5" column="61" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets/Scripts/CraftMenu/CraftModel.cs" line="24" offsetX="752" offsetY="223" expression="building.MovePrefab" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-firstpass PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Builder3D PreferredExecutionTarget="Unity.Editor" />
+</Properties>
