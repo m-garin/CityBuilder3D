@@ -43,13 +43,23 @@ namespace PlacementArea.Tiles
         public void Glow(bool _turn)
         {
             if (prefab != null)
+            {
                 if (_turn)
+                {
                     if (Empty)
+                    {
                         PrefabColor = emptyColor;
+                    }
                     else
+                    {
                         PrefabColor = occupiedColor;
+                    }
+                }
                 else
+                {
                     PrefabColor = baseColor;
+                }
+            }
         }
     }
 }

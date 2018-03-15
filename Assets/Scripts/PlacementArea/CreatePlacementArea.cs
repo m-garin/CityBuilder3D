@@ -31,7 +31,7 @@ namespace PlacementArea
             return tiles;
         }
 
-        private void FillRandomTiles(int _chance)
+        void FillRandomTiles(int _chance)
         {
             for (int y = 0; y < height; y++)
             {

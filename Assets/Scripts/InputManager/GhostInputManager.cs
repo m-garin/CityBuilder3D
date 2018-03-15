@@ -1,7 +1,7 @@
 ﻿using Buildings;
 using Buildings.Ghost;
 using PlacementArea;
-using PlacementArea.BuildingsManager;
+using UI.BuildingsManager;
 using UnityEngine;
 
 namespace InputManager
@@ -15,7 +15,7 @@ namespace InputManager
         [SerializeField]
         MouseInput input;
         [SerializeField]
-        BuildingsManager buildingsManager;
+        UIBuildingsManager buildingsManager;
 
         IBuilding buildingGhost;
         float elevateZ = -1.2f; //Height above ground level

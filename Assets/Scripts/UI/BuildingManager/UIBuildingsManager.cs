@@ -1,15 +1,17 @@
 ﻿using Buildings;
 using InputManager;
+using PlacementArea;
+using PlacementArea.BuildingsManager;
 using UI.BuildingManager;
 using UnityEngine;
 
-namespace PlacementArea.BuildingsManager
+namespace UI.BuildingsManager
 {
     /// <summary>
     /// BuildingsManager class
     /// Open windows for building management
     /// </summary>
-    public class BuildingsManager : MonoBehaviour, IBuildingsManager
+    public class UIBuildingsManager : MonoBehaviour, IUIBuildingsManager
     {
         [SerializeField]
         MouseInput input;

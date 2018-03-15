@@ -1,7 +1,7 @@
 
 namespace PlacementArea.BuildingsManager
 {
-    public interface IBuildingsManager
+    public interface IUIBuildingsManager
     {
         void Enable();
         void Disable();

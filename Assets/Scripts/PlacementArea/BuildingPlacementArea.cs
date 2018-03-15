@@ -18,19 +18,17 @@ namespace PlacementArea
         [SerializeField]
         TileFactory tileFactory;
 
-        ICreatePlacementArea creatPlacementArea;
         List<IBuilding> buildings; //already constructed buildings
         ITile[,] tiles;
-        IPlaceChecker placeChecker;
+        IHighlightTiles highlightTiles;
 
         void Start()
         {
             buildings = new List<IBuilding>();
             //generate area
-            creatPlacementArea = new CreatePlacementArea();
-            tiles = creatPlacementArea.Generate(tileFactory, planeCollider, mapSettings.MapWidth, mapSettings.MapHight);
+            tiles = new CreatePlacementArea().Generate(tileFactory, planeCollider, mapSettings.MapWidth, mapSettings.MapHight);
             //set tiles checker
-            placeChecker = new PlaceChecker(this);
+            highlightTiles = new HighlightTiles(this);
         }
 
         /// <summary>
@@ -41,6 +39,7 @@ namespace PlacementArea
             //check the boundaries
             if (_gridPos.x < 0 || _gridPos.y < 0 || _gridPos.x > mapSettings.MapWidth || _gridPos.y > mapSettings.MapHight)
             {
+                Debug.LogError("Out of bounds");
                 return null;
             }
 
@@ -58,7 +57,7 @@ namespace PlacementArea
             {
                 return FitStatus.OutOfBounds;
             }
-            placeChecker.Check(_gridPos, _building);
+            highlightTiles.HighlightTile(_gridPos, _building);
 
             for (int y = _gridPos.y; y < extents.y; y++)
             {
@@ -82,7 +81,7 @@ namespace PlacementArea
             //buildings
             IBuilding building = buildingFactory.Create(_buildingType, _gridPos, -0.6f);
             buildings.Add(building);
-            placeChecker.Reset();
+            highlightTiles.Reset();
 
             Vector2Int extents = new Vector2Int(_gridPos.x + building.Width, _gridPos.y + building.Height);
 

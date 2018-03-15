@@ -5,18 +5,18 @@ using UnityEngine;
 
 namespace PlacementArea
 {
-    public class PlaceChecker : IPlaceChecker
+    public class HighlightTiles : IHighlightTiles
     {
-        List<ITile> checkedTiles;
+        List<ITile> highlightedTiles;
         IPlacementArea placementArea;
 
-        public PlaceChecker(IPlacementArea _placementArea)
+        public HighlightTiles(IPlacementArea _placementArea)
         {
             placementArea = _placementArea;
-            checkedTiles = new List<ITile>();
+            highlightedTiles = new List<ITile>();
         }
 
-        public void Check(Vector2Int _gridPos, IBuilding _building)
+        public void HighlightTile(Vector2Int _gridPos, IBuilding _building)
         {
             Reset();
             Vector2Int extents = new Vector2Int(_gridPos.x + _building.Width, _gridPos.y + _building.Height);
@@ -27,17 +27,17 @@ namespace PlacementArea
                 {
                     ITile tile = placementArea.GetTile(new Vector2Int(x, y));
                     tile.Glow(true);
-                    checkedTiles.Add(tile);
+                    highlightedTiles.Add(tile);
                 }
             }
         }
 
         public void Reset()
         {
-            for (int i = checkedTiles.Count - 1; i >= 0; i--)
+            for (int i = highlightedTiles.Count - 1; i >= 0; i--)
             {
-                checkedTiles[i].Glow(false);
-                checkedTiles.RemoveAt(i);
+                highlightedTiles[i].Glow(false);
+                highlightedTiles.RemoveAt(i);
             }
         }
     }

@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{F8D7B36B-BD74-F76F-FBFF-95CB72BE723D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/BuildingManager/PopUpView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InputManager/GhostInputManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/UI/BuildingManager/InformationPanelView.cs" Line="32" Column="6" />
-      <File FileName="Assets/Scripts/PlacementArea/BuildingsManager/BuildingsManager.cs" Line="19" Column="9" />
+      <File FileName="Assets/Scripts/PlacementArea/CreatePlacementArea.cs" Line="5" Column="2" />
+      <File FileName="Assets/Scripts/PlacementArea/BuildingPlacementArea.cs" Line="84" Column="27" />
+      <File FileName="Assets/Scripts/PlacementArea/IPlacementArea.cs" Line="13" Column="2" />
+      <File FileName="Assets/Scripts/InputManager/MouseInput.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/BuildingManager/UIBuildingsManager.cs" Line="19" Column="28" />
+      <File FileName="Assets/Scripts/UI/BuildingManager/IUIBuildingsManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/UI/BuildingManager/IInformationPanelView.cs" Line="8" Column="2" />
-      <File FileName="Assets/Scripts/UI/BuildingManager/PopUpController.cs" Line="41" Column="29" />
-      <File FileName="Assets/Scripts/UI/BuildingManager/PopUpView.cs" Line="25" Column="9" />
-      <File FileName="Assets/Scripts/UI/Craft/CraftMenuView.cs" Line="45" Column="36" />
-      <File FileName="Assets/Scripts/UI/AbstractWindowView.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/UI/OverlayWindow.cs" Line="20" Column="2" />
-      <File FileName="Assets/Scripts/UI/BuildingManager/IPopUpView.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlacementArea/Tiles/TileObject.cs" Line="49" Column="31" />
+      <File FileName="Assets/Scripts/PlacementArea/IHighlightTiles.cs" Line="3" Column="1" />
+      <File FileName="Assets/Scripts/InputManager/GhostInputManager.cs" Line="42" Column="1" />
+      <File FileName="Assets/Scripts/PlacementArea/HighlightTiles.cs" Line="40" Column="33" />
+      <File FileName="CityBuilder3D.csproj" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
