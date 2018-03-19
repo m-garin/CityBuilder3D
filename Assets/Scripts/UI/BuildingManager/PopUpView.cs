@@ -30,5 +30,11 @@ namespace UI.BuildingManager
                 controller = value;
             }
         }
+
+        void OnDestroy ()
+        {
+            infoBtn.onClick.RemoveListener(controller.ShowInfo);
+            deleteBtn.onClick.RemoveListener(controller.DeleteObject);
+        }
     }
 }

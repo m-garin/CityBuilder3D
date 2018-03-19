@@ -37,12 +37,20 @@ namespace UI.Craft
 
         public bool MenuIsOpen()
         {
-            return this.gameObject.activeSelf;
+            return gameObject.activeSelf;
         }
 
         public override void OnOutsideClick()
         {
             controller.ClickMenu();
+        }
+
+        void OnDestroy()
+        {
+            craftButton.onClick.RemoveAllListeners();
+            building1x1Button.onClick.RemoveAllListeners();
+            building2x2Button.onClick.RemoveAllListeners();
+            building3x3Button.onClick.RemoveAllListeners();
         }
     }
 }
